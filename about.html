@@ -14,18 +14,21 @@
    <div class="container">
        <div class="navbar">
            <div class="logo">
-               <img src="images/logo.png">
+            <img src="images/logo.png">
            </div>
-           <nav>
+           <nav id="menu"> 
                <ul>
                    <li><a href="index.html">Home</a></li>
                    <li><a href="about.html">About</a></li>
                    <li><a href="#">MedaKalm</a></li>
                    <li><a href="#">RelaKalm</a></li>
                </ul>
+               <img src="images/close.png" class="close-icon" onclick="closemenu()">
            </nav>
+           <img src="images/menu.png" class="menu-icon" onclick="openmenu()">
        </div>
-      
+       
+   </div> 
    <!--
    <div class="made">
     <p>Made with</p>
@@ -35,5 +38,15 @@
     <p>&copy;Adyasha2020</p>
    </div>
 -->
+<script>
+    var menu = document.getElementById("menu")
+    function closemenu(){
+        menu.style.top = "-100vh";
+    }
+    function openmenu(){
+        menu.style.top = "0";
+        
+    }
+</script>
 </body>
 </html>
