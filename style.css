@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+    background: #FFFDF9;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #FFFDF9;
+}
+
+.navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    font-family: 'Amatic SC', cursive;
+    color: #575988;
+    position: relative;
+    top: 20px;
+}
+.logo{
+    font-size: 40px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #575988;
+    font-size: 24px;
+    padding: 15px 5px;
+}
+
+nav ul li a:hover{
+    color: #FF759D;
+    border-bottom: 3px solid #FF759D;
+}
+
+.content-row{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.left-col, .right-col{
+    flex-basis: 50%;
+
+}
+
+.left-col{
+    padding: 180px 0;
+}
+.left-col h3{
+    font-size: 50px;
+    color: #575988;
+    
+}
+
+.left-col p{
+    font-size: 30px;
+    color: #FF759D;
+
+    margin: 20px 0;
+}
+
+.right-col img{
+    width: 100%;
+}
+/*
+.heart{
+    color: red;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.made{
+    position: absolute;
+    right: 80px;
+    top:750px;
+    /*transform: translateY(-50%);
+    color: #FF759D;
+}
+*/
+
