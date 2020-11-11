@@ -132,6 +132,54 @@ nav{
 .right-col img{
     width: 100%;
 }
+.about-container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.about-container h2{
+    font-size: 48px;
+    color: #575988;
+
+}
+.about-container .card{
+    position: relative;
+    max-width: 300px;
+    height: 300px;
+    background: #E9FFFF;
+    margin: 80px 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    left: 120px;
+
+}
+
+.about-container .card-image{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.about-container .card-image img{
+    max-width: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.about-container .card-text{
+    font-size: 24px;
+    color: #575988;
+    text-align: center;
+    
+}
 /*
 .heart{
     color: red;
