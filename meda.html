@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>KALM</title>
+</head>
+<body>
+   <div class="container">
+       <div class="navbar">
+           <div class="logo">
+            <a href="index.html">         
+            <img src="images/logo.png">
+            </a>          
+           </div>
+           <nav id="menu"> 
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="meda.html">MedaKalm</a></li>
+                   <li><a href="#">RelaKalm</a></li>
+               </ul>
+               <img src="images/close.png" class="close-icon" onclick="closemenu()">
+           </nav>
+           <img src="images/menu.png" class="menu-icon" onclick="openmenu()">
+       </div>
+   </div> 
+  <div class="app">
+    
+      <div class="time-select">
+          <button data-time="120">2 Minutes</button>
+          <button data-time="300">5 Minutes</button>
+          <button data-time="600">10 Minutes</button>
+      </div>
+      <div class="player-container">
+          <audio class="song">
+              <source src="./sounds/rain.mp3">
+          </audio>
+          <img src="./svg/play.svg" alt="play" class="play">
+          <svg class="track-outline"
+          width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M226.5 443C346.07 443 443 346.07 443 226.5C443 106.93 346.07 10 226.5 10C106.93 10 10 106.93 10 226.5C10 346.07 106.93 443 226.5 443Z" stroke="#B7C5FF" stroke-width="20"/>
+          </svg>
+            <svg class="moving-outline"
+            width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M226.5 443C346.07 443 443 346.07 443 226.5C443 106.93 346.07 10 226.5 10C106.93 10 10 106.93 10 226.5C10 346.07 106.93 443 226.5 443Z" stroke="#575988" stroke-width="20"/>
+            </svg>
+            <h3 class="time-display">0:00</h3>
+      </div>
+      <div class="sound-picker">
+        <button data-sound="./sounds/rain.mp3">
+            <img src="./svg/rain.svg" alt="rain"/>
+        </button>
+        <button data-sound="./sounds/beach.mp3">
+            <img src="./svg/beach.svg" alt="beach"/>
+        </button>
+      </div>
+  </div>
+<script>
+    var menu = document.getElementById("menu")
+    function closemenu(){
+        menu.style.top = "-100vh";
+    }
+    function openmenu(){
+        menu.style.top = "0";
+        
+    }
+</script>
+<script src="./app.js"></script>
+</body>
+</html>
