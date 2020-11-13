@@ -171,6 +171,10 @@ nav{
     left: 120px;
 
 }
+.card-image .card-text{
+    background: #E9FFFF;
+    
+}
 
 .about-container .card-image{
     position: relative;
@@ -183,6 +187,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    
    
 }
 .about-container .card-text{
